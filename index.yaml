@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  heck-week-gitops:
+  hack-week-gitops:
     - apiVersion: v1
       appVersion: 1.16.0
       created: "2021-07-21T20:07:36.529999+05:30"
       description: A Helm chart for Kubernetes
       digest: 78bc380b26abb154bbe03da4287ea87ea9ca102751796b0be6836454e19519b6
-      name: heck-week-gitops
+      name: hack-week-gitops
       type: application
       urls:
-        - heck-week-gitops-0.1.0.tgz
+        - hack-week-gitops-0.1.0.tgz
       version: 0.1.0
 generated: "2021-07-21T20:07:36.528925+05:30"
