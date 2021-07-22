@@ -39,18 +39,24 @@ We will create a user in AWS which will have access to kubernetes Cluster to app
 
 ![gitops](gitops.png)
 
-# SumUp slide
+# SumUp slides
 
 Team: Andrey Garshyn, Hercules Merscher, Roshan Patil, Sahil Lone
 
-Problem: Can we know when a service was exactly deployed to theta/stage/live? What was the version/revision deployed?
+Problem: Can we know when a service was exactly deployed to theta/stage/live? What was the version/revision deployed? Where do we need to go to verify that? Right now all these questions are tricky to answer since we need to go to multiple places to deploy and verify each one of them.
 
-Solution: To use GoCD to bring visibility and autonomy to the teams within SumUp to come up with their own deployment pipelines.
+Solution: To use GoCD to bring visibility and autonomy to the teams within SumUp to come up with their own deployment pipelines without changing multiple repositories or using multiple tools for that. A single page to follow the whole deployment process and a quick promote to live button, plus a fine grained access control.
 
 Result: 
-1. Visibility of which revision is deployed to multiple environments.
-2. Single source of truth being the application repository.
-3. Easily promote revisions from stage to live.
-4. Easily rollback to a previous revision.
+- Easily create new pipelines and templates.
+- Easily rollback to a previous revision.
+- Approval step to promote from stage to live.
+- The single source of truth being the application repository.
+- Visibility of which revision is deployed to multiple environments in a single screen.
+- ArgoCD integration for a smooth transition of our actual deployment process to the new one.
 
 Moving forward: Install and configure GoCD in our current infrastructure, and start using it with real projects.
+
+![multiple-pipelines.png](multiple-pipelines.png)
+
+![single-pipeline-multiple-stages.png](single-pipeline-multiple-stages.png)
