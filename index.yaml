@@ -10,5 +10,6 @@ entries:
       type: application
       urls:
         - hack-week-gitops-0.1.0.tgz
+        - hack-week-gitops-0.1.2.tgz
       version: 0.1.0
 generated: "2021-07-21T20:07:36.528925+05:30"
