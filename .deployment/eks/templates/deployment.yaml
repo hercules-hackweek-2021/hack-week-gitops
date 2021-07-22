@@ -5,6 +5,7 @@ metadata:
   name: {{ .Values.applicationName }}-deployment
   namespace: {{ .Values.applicationName }}
   labels:
+    sha: {{ .Values.image.tag }}
     projectName: {{ .Values.applicationName }}
     environment: {{ .Values.environment }}
     type: deployment

@@ -11,6 +11,7 @@ metadata:
     projectName: {{ .Values.applicationName }}
     environment: {{ .Values.environment }}
     type: service
+    sha: {{ .Values.image.tag }}
 spec:
   type:  LoadBalancer
   ports: 
