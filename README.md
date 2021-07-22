@@ -38,3 +38,19 @@ In GoCD we have Stages, Jobs and Commands. Stage consists of multiple jobs and J
 We will create a user in AWS which will have access to kubernetes Cluster to apply the descriptors. We will be using GoFmt rather than helm to have capabilities of programmable K8s descriptors.
 
 ![gitops](gitops.png)
+
+# SumUp slide
+
+Team: Andrey Garshyn, Hercules Merscher, Roshan Patil, Sahil Lone
+
+Problem: Can we know when a service was exactly deployed to theta/stage/live? What was the version/revision deployed?
+
+Solution: To use GoCD to bring visibility and autonomy to the teams within SumUp to come up with their own deployment pipelines.
+
+Result: 
+1. Visibility of which revision is deployed to multiple environments.
+2. Single source of truth being the application repository.
+3. Easily promote revisions from stage to live.
+4. Easily rollback to a previous revision.
+
+Moving forward: Install and configure GoCD in our current infrastructure, and start using it with real projects.
