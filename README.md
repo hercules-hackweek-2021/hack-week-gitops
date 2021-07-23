@@ -60,3 +60,5 @@ Moving forward: Install and configure GoCD in our current infrastructure, and st
 ![multiple-pipelines.png](multiple-pipelines.png)
 
 ![single-pipeline-multiple-stages.png](single-pipeline-multiple-stages.png)
+
+* Showcase video
